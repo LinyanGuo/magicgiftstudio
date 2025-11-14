@@ -1,0 +1,23 @@
+# 1) Verify duplicates (run from project root)
+# PowerShell:
+Get-ChildItem -Recurse -Filter page.tsx
+# or (Git Bash / WSL):
+find . -name "page.tsx"
+
+# 2) Backup the duplicate (example: move it)
+# PowerShell:
+Move-Item "d:\GiftShop\magicgiftstudio-template\magicgiftstudio\magicgiftstudio" "d:\backup\magicgiftstudio-duplicate-$(Get-Date -Format yyyyMMddHHmmss)"
+
+# 3) OR delete (non-git) — PowerShell:
+Remove-Item -Recurse -Force "d:\GiftShop\magicgiftstudio-template\magicgiftstudio\magicgiftstudio"
+
+# 3b) If repo is tracked by git (preferred):
+git rm -r "magicgiftstudio"   # run from d:\GiftShop\magicgiftstudio-template\magicgiftstudio
+git commit -m "Remove duplicate nested magicgiftstudio folder"
+
+# 4) Search & fix imports (example):
+# Grep for references that include "/magicgiftstudio/magicgiftstudio" and update paths.
+# 5) Restart dev:
+# Stop server: Ctrl+C in terminal
+# Optional clear build: rmdir /s /q .next
+npm run dev

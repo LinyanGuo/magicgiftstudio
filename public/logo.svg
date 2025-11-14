@@ -1,0 +1,24 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#F5A8B8"/>
+      <stop offset="100%" stop-color="#FFDFA4"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="256" height="256" rx="32" fill="#FFF9FB" />
+  <g transform="translate(28,28)">
+    <rect x="40" y="80" width="160" height="100" rx="14" fill="url(#g)" />
+    <rect x="40" y="70" width="160" height="24" rx="8" fill="#F5A8B8" />
+    <path d="M120 70 L120 180" stroke="#FFF9FB" stroke-width="10"/>
+    <circle cx="170" cy="60" r="6" fill="#FFDFA4"/>
+    <circle cx="150" cy="40" r="4" fill="#FFDFA4"/>
+    <circle cx="190" cy="45" r="3" fill="#FFDFA4"/>
+  </g>
+  <text x="128" y="220" text-anchor="middle" font-size="20" font-family="Segoe UI, Arial" fill="#222222">Magic Gift Studio</text>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Magic Gift Studio logo">
+    <rect width="100%" height="100%" fill="#fff"/>
+    <circle cx="60" cy="44" r="28" fill="#ffb74d"/>
+    <path d="M40 80c4-6 8-10 20-10s16 4 20 10" stroke="#8d6e63" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <text x="60" y="105" font-size="12" font-family="Arial, sans-serif" fill="#333" text-anchor="middle">MGS</text>
+  </svg>
+</svg>

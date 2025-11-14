@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 400" width="1600" height="400" role="img" aria-label="Cover image">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffd49a"/>
+      <stop offset="1" stop-color="#ffe6f0"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <g transform="translate(40,60)" fill="#333" font-family="Arial, sans-serif">
+    <text x="0" y="0" font-size="48" font-weight="700">Handmade gifts with love</text>
+    <text x="0" y="60" font-size="22" opacity="0.85">Unique, handcrafted items — local pickup</text>
+  </g>
+</svg>
