@@ -2,6 +2,10 @@ import prisma from '../../../lib/prisma';
 import ProductCarousel from '../../../components/ProductCarousel';
 import Link from 'next/link';
 
+export const fetchCache = 'force-no-store';
+export const revalidate = 0;
+
+
 // 强制 Node.js runtime，避免 Edge + Prisma 的坑
 export const runtime = 'nodejs';
 // 强制动态渲染，避免构建时预渲染出错
